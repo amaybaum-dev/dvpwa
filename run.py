@@ -1,7 +1,7 @@
 import sys
 import logging
 from yaml import Loader, Dumper
-from jinja2 import Template
+from jinja2 import Template, sandbox
 from aiohttp.web import run_app
 from sqli.app import init as init_app
 
